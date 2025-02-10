@@ -1,0 +1,39 @@
+.bananaImg {
+    position: relative;
+    text-align: center;
+}
+
+.bananaImg h2 {
+    position: absolute; 
+    top: 40%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 1000;
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(0, 255, 136);
+    transition: font-size 0.4s ease, transform 0.4s ease, top 0.4s ease; 
+    width: 100%; 
+    box-sizing: border-box;
+    padding: 20px; 
+}
+
+.bananaImg h2.scrolled {
+    top: 0;
+    transform: translateX(-50%); 
+    font-size: 1rem;
+}
+
+.bananaImg h2:hover {
+    text-decoration: underline 2px rgb(180, 154, 154);
+    text-shadow: 2px 0 black;
+    color: rgb(0, 255, 21);
+    cursor: pointer;
+}
+
+#banana {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover; 
+    display: block; 
+}
